@@ -26,7 +26,7 @@ jobs:
         tags: ${{ github.actor }}/${{ env.IMAGE_NAME }}:${{ github.run_number }}
 
     - name: Repository Dispatch
-      uses: jobnow/repository-dispatch@v1
+      uses: jobnow/node-app@v1
       with:
         token: ${{ secrets.PAT }}
         repository: ${{ github.actor }}/argocd-node-app-config
